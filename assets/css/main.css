@@ -172,7 +172,7 @@ section > header{
 
 .conteneur-bouton {
 	display: flex;
-	justify-content: right;
+	/* justify-content: right; pour pied de site */
 	margin-top: var(--espacement-petit);
 	gap: var(--espacement-petit);
 

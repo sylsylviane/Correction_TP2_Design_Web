@@ -1,5 +1,7 @@
 /*formulaire dans la navigation*/
 .formulaire-navigation{
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	top:-5px; /*Corrigez l'alignement*/
 	
@@ -12,7 +14,7 @@
 		margin:0;
 		border-bottom-right-radius: 0;
 		border-top-right-radius: 0;
-		flex-basis: 80%;
+		/* flex-basis: 80%; */
 	}
 
 	& button{
@@ -22,7 +24,7 @@
 		border-bottom-left-radius: 0;
 		border-top-left-radius: 0;
 		background-color: var(--couleur-accent);
-		flex-basis: 18%;
+		/* flex-basis: 18%; */
 	
 	}
 

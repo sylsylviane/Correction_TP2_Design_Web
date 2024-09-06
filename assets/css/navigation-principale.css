@@ -7,16 +7,16 @@
 	margin:0;
 	padding: 1em ;
 	color: var(--couleur-arriere-plan);
-
+	/* justify-content: space-around; */
 
 	&>* {
 		flex-basis:calc(16%);
 			
 	}
 
-	&>a{
+	/* &>a{
 		margin-right: 1em;
-	}
+	} */
 
 	@media (max-width: 1540px){
 		&>* {
