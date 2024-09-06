@@ -1,0 +1,196 @@
+/* 
+
+Gouttière et rythme de base
+20px
+
+Rythme serré
+20px
+
+Rythme serré
+40px
+
+Rythme espacé
+80px
+
+Largeur maximale des sections principales
+100rem
+
+*/
+
+:root{
+    --couleur-arriere-plan: #eff0ed;
+    --couleur-accent: #B1D862;
+    --couleur-dominante: #353446;
+    --couleur-secondaire: #C7A0A7;
+    
+    --tres-petite-taille-police: 1.1rem;
+    --petite-taille-police: 1.5rem;
+    --moyenne-taille-police: 1.8rem;
+    --grande-taille-police: 2.3rem;
+    --tres-grande-taille-police: 3rem;
+    
+    --espacement-petit: 20px;
+    --espacement-moyen: 40px;
+    --espacement-grand: 80px;
+    --largeur-max-section: 100rem;
+    } 
+/* Règles génériques -----------------------  ==== ref = M.Charpentier*/
+
+/* Rétablir les marges 
+intérieures & extérieures sur tout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Rythme vertical de base 
+    pour tous les éléments de contenu */
+*+p, *+img, *+a, *+small,
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 { 
+    margin-top: var(--espacement-petit); 
+}
+
+/* Base typographique à être héritée ==== ref = M.Charpentier*/
+body {
+    font-family: "Oswald", sans-serif; 
+    line-height: 1.5625;
+    background-color: var(--couleur-arriere-plan);
+    color: var(--couleur-dominante);
+    font-size: var(--tres-petite-taille-police);
+}
+
+/* Style « prototype » pour les images vides  ==== ref = M.Charpentier*/
+img {
+	width: 100%;
+}
+
+/* Base « prototype » pour les éléments enligne 
+	utilisés seuls (sans parent textuel — p. ex. <p>) */
+a, small {
+	display: inline-block;
+}
+
+/* Marges de sécurité de base */
+body>* {
+	margin: var(--espacement-petit);
+}
+
+/* Règles spécifiques des éléments de contenu ----------------------- */
+
+/* *Tous* liens sont de type bouton*/
+a, input[type=submit], button{
+	padding: .4125em .75em;
+	background: var(--couleur-secondaire);
+	color: var(--couleur-dominante);
+	text-decoration: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	transition-duration: 100ms;	
+	font-weight: 600;
+	box-sizing: border-box;	
+	}
+
+a:hover, input[type=submit]:hover, button:hover {
+	background: var(--couleur-accent);
+	color: var(--couleur-dominante);
+	}
+
+input[type=submit]{
+	display: block;
+	margin: 20px 0;
+	padding: 1em;
+	border:none;	
+}
+
+input[type=search], input[type=text]{
+	min-width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #3534469f;
+	border-radius: 4px;
+	box-sizing: border-box;	
+}
+
+/* Règles générales des sections de contenu ==============================================================================*/
+
+
+/* Rythme vertical espacé pour bien dégagerles principaux conteneurs de contenu */
+body>section {
+	margin-top: var(--espacement-grand);
+}
+
+/* Limiter et centrer les principales sections de contenu */
+body>section {
+	max-width: var(--largeur-max-section);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--espacement-petit);
+	padding-right: var(--espacement-petit);
+}
+
+/* Rythme vertical de base pour les éléments de section */
+body>section>*+* {
+	margin-top: var(--espacement-petit);
+}
+
+/* Règle générale header --------------------------------------------------------*/
+
+/* Permettre aux enfants de l'entête de croître */
+body>header>* {
+	flex-grow: 1;
+}
+
+body>header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+section > header{
+	border-bottom: 1px solid #3534469f;
+	padding-bottom: var(--espacement-petit);
+	margin-bottom: var(--espacement-petit);
+}
+
+/* CLASSES */
+
+/*Logo*/
+.logo{
+	width: 200px;
+	cursor: pointer;
+}
+
+/* Footer */
+/* .conteneur{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+} */
+
+.conteneur-bouton {
+	display: flex;
+	justify-content: right;
+	margin-top: var(--espacement-petit);
+	gap: var(--espacement-petit);
+
+	@media (max-width: 1040px) {
+		&{
+			flex-direction: column;
+		}
+	}
+
+	@media (min-width: 330px) and (max-width: 550px){
+		&{
+			flex-direction: column;
+		}
+	}
+}
+
+.droits-auteur{
+	padding:20px 20px;
+}
+
+

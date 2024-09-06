@@ -1,0 +1,41 @@
+/*lien categorie item grille*/
+
+.carte{
+	width: calc(25% - 20px);
+}
+.carte img {
+	height: 12rem; /* À VÉRIFIER AVEC PROF */
+	max-width: 100%;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+.carte a {
+	background: none;
+	border: 2px solid #35344664;
+	padding: var(--espacement-petit);
+	min-width: 100%;
+	box-sizing: border-box;
+}
+
+.carte a:hover{
+	border: 2px solid #985965;
+}
+
+.carte a:hover h3{
+	color: #985965;
+}
+
+@media (max-width: 1050px){
+	.carte {
+		width: calc(50% - 20px);
+	}	
+}
+
+	@media screen and (max-width: 800px){
+		&{
+			flex-direction: column;
+			/* min-width: 100%; */
+		}
+	}
+
+

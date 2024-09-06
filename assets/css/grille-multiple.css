@@ -1,0 +1,37 @@
+.grille-multiple {
+	display:flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: var(--espacement-petit);
+
+	& article {
+		width: calc(33.33% - 20px);
+	}
+
+	@media (max-width: 1050px){
+		& {
+			order: 2;
+			flex-direction: row;
+			gap: 20px;
+			max-width: calc(100% - 20px);
+		}
+
+		& h3{
+			font-size: var(--petite-taille-police);
+		}
+	}
+
+	@media (max-width: 750px){
+		& article{
+			width: calc(50% - 20px);
+		}
+	}
+
+	@media (max-width: 500px){
+		& article{
+			width: calc(100% - 20px);
+		}
+	}
+}
+

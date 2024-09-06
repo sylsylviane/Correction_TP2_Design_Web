@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="fr"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Annabelle Gamache 0239070">
+    <!-- telechargement des icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typographie.css">
+    <link rel="stylesheet" href="assets/css/navigation-principale.css">
+    <link rel="stylesheet" href="assets/css/menu-deroulant.css">
+    <link rel="stylesheet" href="assets/css/entete-vedette.css">
+    <link rel="stylesheet" href="assets/css/contenu-sur-image.css">
+    <link rel="stylesheet" href="assets/css/texte-image.css">
+    <link rel="stylesheet" href="assets/css/grille.css">
+    <link rel="stylesheet" href="assets/css/carte.css">
+    <link rel="stylesheet" href="assets/css/formulaire-navigation.css">
+    <link rel="stylesheet" href="assets/css/pied-de-site.css">
+    <link rel="stylesheet" href="assets/css/conteneur-pied-de-site.css">
+    <link rel="stylesheet" href="assets/css/navigation-secondaire.css">
+    <link rel="stylesheet" href="assets/css/bouton.css">
+    <link rel="stylesheet" href="assets/css/aside.css">
+    <link rel="stylesheet" href="assets/css/grille-multiple.css">
+    <link rel="stylesheet" href="assets/css/grande-image.css">
+    <title>Vedge : Restaurant Végane</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navigation-principale">
+      <!-- logo-->
+      <div><img src="assets/img/logo.png" class="logo" alt="Logo Vedge restaurant végane"></div>
+      <div class="menu-deroulant">
+        <a  href="#">Restaurants <i class="ri-arrow-down-s-line"></i></a>
+        <div> 
+          <a href="#">Trois-Rivières</a>
+          <a href="#">Drummondville</a>
+          <a href="#">Val-Jalbert</a>
+          <a href="#">Dix30</a> 
+          <a href="#">Toronto</a> 
+          <a href="#">Berlin</a>
+        </div>
+      </div>
+      <div class="menu-deroulant">
+        <a  href="#">Menu <i class="ri-arrow-down-s-line"></i></a>
+        <div>
+          <a href="#">Brunch</a>
+          <a href="#">Dîner</a>
+          <a href="#">Souper</a>
+          <a href="#">Boisson</a> 
+        </div>
+      </div>
+      <a class="bouton" href="#">Faire une réservation</a>
+      <a class="bouton" href="#">Commander en ligne</a>
+      <form class="formulaire-navigation">
+        <label for="recherche">Trouver un restaurant</label>
+        <div>
+          <input id="recherche" type="text" placeholder="Entrez votre code postal">
+          <button type="submit" aria-label="button"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </nav>
+    <!-- section : HEADER -->
+    <header class="entete-vedette grande-image">
+              <img src="assets/img/repas-vegane-restaurant-vedge.jpg" alt="Repas végane">
+              <div>
+                  <div> 
+                      <h1>Vedge</h1>
+                      <h2>restaurant végane</h2>
+                  </div>
+                  
+                  <div>
+                      <h3>Botanique et décadente</h3>
+                      <p>Savourez les meilleurs plats dans le respect de la nature</p>
+                  </div>           
+                  <a href="#">Découvrez notre menu</a>
+              </div>       
+  </header>
+    <!-- section :(monajout) categorie de menu -->
+    <section>
+      <header>
+        <h2>Menu</h2>
+      </header>
+      <div class="grille">
+        <article class="carte">
+          <a href="#">
+            <img src="assets/img/dejeuner-vegane-restaurant-vedge.jpg" alt="Déjeuner végane">
+            <h3>Brunch</h3>
+          </a>
+        </article>
+        <article class="carte">
+          <a href="#">
+            <img src="assets/img/repas-diner-vegane.jpg" alt="Diner végane">
+            <h3>Dîner</h3>
+          </a>
+        </article>
+        <article class="carte">
+          <a href="#">
+            <img src="assets/img/sushi-vegane-souper-restaurant-vedge.jpg" alt="Souper végane">
+            <h3>Souper</h3>
+          </a>
+        </article>
+        <article class="carte">
+          <a href="#">
+            <img src="assets/img/boisson-vegane-restaurant-vedge.jpg" alt="Boisson végane">
+            <h3>Boisson</h3>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- section : promotion ========================================================================-->
+    <section class="contenu-sur-image grande-image">
+      <img src="assets/img/mimosa-gratuit-restaurant-vedge.jpg" alt="Cocktail mimosa">
+      <div>
+          <h2>Profitez de nos promotions</h2>
+          <h3>Deux mimosas pour 15$ pendant toute l'heure du brunch</h3>
+          <a href="#">Voir nos promotions</a>
+      </div>    
+  </section>
+
+  <!-- section : À propos ================================================================-->
+
+  <section>
+    <header>
+      <h2>Notre philosophie</h2>
+    </header>
+    <div class="texte-image">
+        <div>   
+            <h3>Cuisine artisanale</h3>
+            <p>Nous connaissons chaque ingrédient qui entre dans la composition de nos recettes. Nous créons la plupart de nos recettes à partir de rien - rien que des ingrédients naturels, frais et savoureux. Voilà qui fait la vraie beauté de notre cuisine!</p>
+            <div>
+              <a href="#">En savoir plus</a> 
+            </div>
+        </div>
+        <img src="assets/img/legume-locaux.jpg" alt="Légume frais">
+    </div>
+</section>
+    <!-- section : Restaurant vedette ================================================================-->
+    <section>
+      <header>
+        <h2>Restaurants en vedette</h2>
+      </header>
+      <div class="grille">
+          <div class="grille-multiple">
+          <article class="carte">
+            <a href="#">
+              <h3>Trois-Rivières</h3>
+              <img src="assets/img/restaurant-vedge-trois-rivieres.jpg" alt="Restaurant de Trois-Rivières">
+            </a>
+          </article>
+          <article class="carte">
+            <a href="#">
+              <h3>Drummonville</h3>
+              <img src="assets/img/restaurant-vedge-drummondville.jpg" alt="Restaurant de Drummondville">
+            </a>
+          </article>
+          <article class="carte">
+            <a href="#">
+              <h3>Val-Jalbert</h3>
+              <img src="assets/img/restaurant-vedge-val-jalbert.jpg" alt="Restaurant de Val-Jalbert">
+            </a>
+          </article>
+          <article class="carte">
+            <a href="#">
+              <h3>Dix30</h3>
+              <img src="assets/img/restaurant-vedge-dix-30.jpg" alt="Restaurant du quartier Dix30">
+            </a>
+          </article>
+          <article class="carte">
+            <a href="#">
+              <h3>Toronto</h3>
+              <img src="assets/img/restaurant-vedge-toronto.jpg" alt="Restaurant de Toronto">
+            </a>
+          </article>
+          <article class="carte">
+            <a href="#">
+              <h3>Berlin</h3>
+              <img src="assets/img/restaurant-vedge-berlin.jpg" alt="Restaurant de Berlin">
+            </a>
+          </article>
+        </div>
+        <aside class="aside">
+          <h2>Trouvez un restaurant "Vedge" près de chez vous</h2>
+          <form>
+            <label for="mapRecherche">Entrez votre ville ou votre code postal</label>
+            <input id="mapRecherche" type="search" placeholder="Entrez votre ville ou votre code postal">
+            <input  type="submit" value="Trouvez">
+          </form>
+        </aside>
+      </div>
+    </section>
+    <!-- section : initation franchise ==============================================-->
+    <section class="contenu-sur-image grande-image">
+      <img src="assets/img/menu-vegane-restaurant-vedge.jpg" alt="Repas végane">
+      <div>
+          <h2>Vous voulez établir votre propre restaurant?</h2>
+          <h3>Laissez-nous vous convaincre de développer votre propre franchise "Vedge"</h3>
+          <a href="#">Contactez-nous</a>
+      </div>
+  </section>
+    <!-- FOOTER ========================================================================-->
+    <footer class="pied-de-site">
+      <div class="conteneur-pied-de-site">
+        <div>
+          <h3>Heures d'ouverture</h3>
+          <p>Lundi à Mercredi 11:30 - 22:00</p>
+          <p>Jeudi à Samedi 11:30 - 23:00</p>
+          <p>Dimanche : 10:00 - 22:00</p>
+        </div>
+        <div>
+          <img src="assets/img/logo.png" class="logo" alt="Logo Vedge restaurant végane">
+          <div class="navigation-secondaire">
+            <a href="#">Notre philosophie</a>
+            <a href="#">Carrières</a>
+            <a href="#">Franchises</a>
+            <a href="#">Presse</a>
+            <a href="#">Contactez-nous</a>
+          </div>
+          <div class="conteneur-bouton">
+            <a class="bouton" href="#">Réservez une table</a>
+            <a class="bouton"  href="#">Commandez en ligne</a>
+          </div>
+        </div>
+      </div>
+      <div class="droits-auteur">
+        <p>Tous droits réservés &copy; 2024 Vedge : Restaurant Végane </p>
+      </div>
+    </footer> 
+  </body>
+</html>

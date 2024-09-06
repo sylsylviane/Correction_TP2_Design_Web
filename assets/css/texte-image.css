@@ -1,0 +1,38 @@
+.texte-image{
+    display: flex;
+    align-items: center;
+    gap: var(--espacement-moyen);
+    justify-content: center;
+    padding: 0;
+
+    & > div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    & p {
+        margin-top: 0;
+    }
+    
+    & a{
+        margin-top: var(--espacement-petit);
+    }
+    & img{
+        max-width: 50%;
+        object-fit: cover;
+    }
+    
+    & h4{
+        font-size: var(--moyenne-taille-police);
+    }
+
+    @media (min-width: 330px) and (max-width: 550px){
+        &{
+            flex-direction: column;
+        }
+        & img{
+            min-width: 100%;
+        }
+    }
+}
+

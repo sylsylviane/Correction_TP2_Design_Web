@@ -1,0 +1,50 @@
+/*formulaire dans la navigation*/
+.formulaire-navigation{
+	position: relative;
+	top:-5px; /*Corrigez l'alignement*/
+	
+	& > div{
+		display: flex;
+	}
+
+	& input[type=text] {
+		padding: 4px ;
+		margin:0;
+		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+		flex-basis: 80%;
+	}
+
+	& button{
+		padding: 0.375em 0.75em;
+		border: none;
+		cursor: pointer;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		background-color: var(--couleur-accent);
+		flex-basis: 18%;
+	
+	}
+
+	@media (max-width: 1365px) {
+		& {
+			order: 2;
+		}
+	}
+
+	@media screen and (max-width: 1200px){
+		&{
+			display: none;
+		}
+
+
+	}
+
+
+}
+
+
+
+
+
+

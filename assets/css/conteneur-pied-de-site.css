@@ -1,0 +1,31 @@
+.conteneur-pied-de-site {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: stretch;
+	align-content: center;
+	/* gap: var(--espacement-petit); */
+	padding: var(--espacement-petit); 
+
+	&>div{
+		max-width: calc(50% - 20px); 
+	}
+
+	@media (min-width: 330px) and (max-width: 550px){
+		& {
+			display: flex;
+			flex-direction: column-reverse;
+			align-content: flex-start;
+			gap: 20px;
+		}
+	
+		& > div{
+			min-width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	
+}
+

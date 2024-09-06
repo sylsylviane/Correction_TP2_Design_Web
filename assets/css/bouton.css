@@ -1,0 +1,16 @@
+.bouton {
+	background: var(--couleur-accent);
+	margin-top: 0;
+	border-radius: 8px;
+	padding: 10px;
+	color: var(--couleur-dominante);
+	text-transform: uppercase;
+	min-width: fit-content;
+	text-align: center;
+	
+}
+
+.bouton:hover {
+	background: var(--couleur-secondaire);
+	color: var(--couleur-dominante);
+}

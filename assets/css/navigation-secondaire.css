@@ -1,0 +1,23 @@
+.navigation-secondaire{
+	display: flex;
+	gap: var(--espacement-petit);
+	align-items: baseline;
+	flex-wrap: wrap;
+
+	& a {
+		margin-top: 0;
+		line-height: 2em;;
+		background: none;
+		color: var(--couleur-arriere-plan);
+	} 
+	& a:hover {
+		color: var(--couleur-accent);
+	}
+
+	@media (min-width: 330px) and (max-width: 550px){
+		&{
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+}
