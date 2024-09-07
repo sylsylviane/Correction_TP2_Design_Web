@@ -5,9 +5,13 @@
 	color: var(--couleur-dominante);
 	margin-top: -20px;/*pour coller la division sur la section*/
 
+	& header{
+		padding-bottom: var(--espacement-petit);
+		border-bottom: 1px solid #3534469f;
+	}
 	& h2{
 		color: var(--couleur-dominante);
-		border-bottom: 1px solid #3534469f;
+		
 	}
 
 	& input[type=submit]{

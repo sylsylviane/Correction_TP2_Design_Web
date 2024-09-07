@@ -1,7 +1,5 @@
-/*lien categorie item grille*/
-
 .carte{
-	width: calc(25% - 20px);
+	min-width: calc(25% - 20px);
 }
 .carte img {
 	height: 12rem; /* À VÉRIFIER AVEC PROF */
@@ -20,9 +18,12 @@
 .carte a:hover{
 	border: 2px solid #985965;
 }
-
+.carte h3{
+	font-size: var(--tres-petite-taille-police);
+}
 .carte a:hover h3{
 	color: #985965;
+	
 }
 
 @media (max-width: 1050px){
@@ -34,7 +35,6 @@
 	@media screen and (max-width: 800px){
 		&{
 			flex-direction: column;
-			/* min-width: 100%; */
 		}
 	}
 

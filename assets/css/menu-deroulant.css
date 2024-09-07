@@ -43,7 +43,7 @@
 			flex-basis: calc(50% - 20px);
 			order: 4;
 			border-top: 1px var(--couleur-arriere-plan) solid;
-			margin-top: 10px;
+			margin-top: var(--espacement-petit);
 			
 		}
 	}

@@ -5,19 +5,19 @@
 	justify-content:space-between;
 	align-items: stretch;
 	align-content: center;
-	/* gap: var(--espacement-petit); */
 	padding: var(--espacement-petit); 
 
 	&>div{
 		max-width: calc(50% - 20px); 
 	}
 
-	@media (min-width: 330px) and (max-width: 550px){
+	@media (min-width: 330px) and (max-width: 800px){
 		& {
 			display: flex;
 			flex-direction: column-reverse;
 			align-content: flex-start;
-			gap: 20px;
+			gap: var(--espacement-petit);
+			align-content: center;
 		}
 	
 		& > div{
@@ -25,6 +25,7 @@
 			display: flex;
 			flex-direction: column;
 		}
+		
 	}
 	
 }

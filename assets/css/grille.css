@@ -4,12 +4,11 @@
 	gap: var(--espacement-petit);
 	
 	@media (max-width: 1050px) {
-		/*grille flex general===========================*/
 		& {
 			flex-wrap: wrap;
 			align-items: stretch;
 			align-content: stretch;
-			gap:20px;
+			gap: var(--espacement-petit);
 			
 		}
 	}
