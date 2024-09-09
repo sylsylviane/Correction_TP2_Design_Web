@@ -1,0 +1,110 @@
+:root{
+    --couleur-arriere-plan: #eff0ed;
+    --couleur-accent: #B1D862;
+    --couleur-dominante: #353446;
+    --couleur-secondaire: #C7A0A7;
+    
+    --tres-petite-taille-police: 1.1rem;
+    --petite-taille-police: 1.5rem;
+    --moyenne-taille-police: 1.8rem;
+    --grande-taille-police: 2.3rem;
+    --tres-grande-taille-police: 3rem;
+    
+    --espacement-petit: 20px;
+    --espacement-moyen: 40px;
+    --espacement-grand: 80px;
+    --largeur-max-section: 100rem;
+    } 
+
+/* Rétablir les marges 
+intérieures & extérieures sur tout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Rythme vertical de base 
+    pour tous les éléments de contenu */
+*+p, *+img, *+a, *+small,
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 { 
+    margin-top: var(--espacement-petit); 
+}
+
+/* Style « prototype » pour les images vides  ==== ref = M.Charpentier*/
+img {
+	width: 100%;
+}
+
+/* Base « prototype » pour les éléments enligne 
+	utilisés seuls (sans parent textuel — p. ex. <p>) */
+a, small {
+	display: inline-block;
+}
+
+/* Règles spécifiques des éléments de contenu ----------------------- */
+
+/* *Tous* liens sont de type bouton*/
+a, input[type=submit], button{
+	padding: .4125em .75em;
+	background: var(--couleur-secondaire);
+	color: var(--couleur-dominante);
+	text-decoration: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	transition-duration: 100ms;	
+	box-sizing: border-box;	
+	}
+
+a:hover, input[type=submit]:hover, button:hover {
+	background: var(--couleur-accent);
+	color: var(--couleur-dominante);
+	}
+
+input[type=submit]{
+	display: block;
+	margin: 40px 0;
+	padding: 1em;
+	border:none;	
+}
+
+input[type=search], input[type=text]{
+	min-width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #3534469f;
+	border-radius: 4px;
+	box-sizing: border-box;	
+}
+
+/* Règles générales des sections de contenu ==============================================================================*/
+
+section > header{
+	border-bottom: 1px solid #3534469f;
+	padding-bottom: var(--espacement-petit);
+	margin-bottom: var(--espacement-petit);
+}
+
+/* CLASSES */
+
+/*Logo*/
+.logo{
+	max-width: 200px;
+	cursor: pointer;
+}
+
+/* Footer */
+
+.pied-de-site{
+	margin: 60px 0 0 0;
+	color: var(--couleur-arriere-plan);
+	background-color: var(--couleur-dominante);
+
+	& p{
+		line-height: 1em;
+	}
+}
+
+.droits-auteur{
+	padding: var(--espacement-petit);
+}

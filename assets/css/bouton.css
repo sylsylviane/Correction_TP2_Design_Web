@@ -8,9 +8,10 @@
 	min-width: fit-content;
 	text-align: center;
 	font-weight: 600;
+
+	&:hover {
+		background-color: var(--couleur-secondaire);
+		color: var(--couleur-dominante);
+	}
 }
 
-.bouton:hover {
-	background: var(--couleur-secondaire);
-	color: var(--couleur-dominante);
-}

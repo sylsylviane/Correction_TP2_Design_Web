@@ -1,0 +1,13 @@
+.conteneur-bouton {
+	display: flex;
+	margin-top: var(--espacement-petit);
+	gap: var(--espacement-petit);
+	justify-content: flex-end;
+	flex-wrap: wrap;
+
+	@media (min-width: 330px) and (max-width: 800px){
+		&{
+			justify-content: flex-start;
+		}
+	}
+}

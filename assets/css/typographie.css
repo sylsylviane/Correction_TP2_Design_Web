@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&family=Oswald&display=swap');
 
-/* Interlignage propre aux titres
-(moins espacé que le contenu courant) */
 h1, h2, h3, h4 {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -17,7 +15,6 @@ h1{
     text-transform: uppercase;
 }
 
-/* Intervention graphique séparant clairement les titres du contenu les suivant */
 h2{
     font-size: var(--grande-taille-police);
 }
@@ -29,7 +26,3 @@ h3{
 h4{
     font-size: var(--petite-taille-police);
 }
-
-/* VÉRIFIER - PAS DE FICHIER IMPORT */
-
-/* VÉRIFIER CAR LES BALISES DE TITRE ONT ÉTÉ MODIFIÉES */

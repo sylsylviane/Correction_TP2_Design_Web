@@ -23,7 +23,6 @@
 		border-top-left-radius: 0;
 		background-color: var(--couleur-accent);
 		flex-basis: 18%;
-	
 	}
 
 	@media (max-width: 1365px) {
@@ -36,11 +35,7 @@
 		&{
 			display: none;
 		}
-
-
 	}
-
-
 }
 
 
