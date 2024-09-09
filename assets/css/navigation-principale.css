@@ -8,10 +8,8 @@
 	padding: 1em ;
 	color: var(--couleur-arriere-plan);
 	
-
 	&>* {
-		flex-basis:calc(16%);
-			
+		flex-basis:calc(16%);		
 	}
 
 	&>a{
@@ -20,8 +18,7 @@
 
 	@media (max-width: 1540px){
 		&>* {
-			flex-basis:calc(14%);
-				
+			flex-basis:calc(14%);			
 		}
 	}
 

@@ -2,7 +2,7 @@
 	min-width: calc(25% - 20px);
 
 	& img {
-		height: 12rem; /* À VÉRIFIER AVEC PROF */
+		height: 12rem; 
 		max-width: 100%;
 		box-sizing: border-box;
 		object-fit: cover;
